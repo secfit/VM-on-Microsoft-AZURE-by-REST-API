@@ -51,3 +51,11 @@ After successfully authentication to Microsoft AZURE via Powershell, we should g
      ```
 <br><br>
 #### You can download full Poweshell script [create_ressource_group.ps1](create_ressource_group.ps1) 
+You should replace the following values : <br>
+```
+-    $subscriptionId
+-    $resourcegroupname
+-    location
+-    tagname1
+```
+
