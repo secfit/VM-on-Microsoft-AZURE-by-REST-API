@@ -19,7 +19,7 @@ You should replace the following values : <br>
   api-version = 2024-05-01
 ```
 
-2.  The body section will be as following :
+2.  The body section will be as following :<br>
       For more information about AZURE API options for Virtual Network creation : [Azure Help](https://learn.microsoft.com/en-us/rest/api/virtualnetwork/virtual-networks/create-or-update?view=rest-virtualnetwork-2024-05-01&tabs=HTTP)
    ```powershell
       $body='{
