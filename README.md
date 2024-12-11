@@ -10,3 +10,5 @@ The Azure REST API provides developers and IT professionals with programmatic ac
 2. Authentication to Microsoft AZURE using REST API [azure_account_auth_rest_api.md](azure_account_auth_rest_api.md)
 3. Create resource group [create_ressource_group_on_azure_rest_api.md](create_ressource_group_on_azure_rest_api.md)
 4. Create Virtual Network & Subnet [create_virtual_network_subnet_on_azure_rest_api.md](create_virtual_network_subnet_on_azure_rest_api.md)
+5. Generate public IP address [generate_public_ip_on_azure_rest_api.md](generate_public_ip_on_azure_rest_api.md)
+6. 
