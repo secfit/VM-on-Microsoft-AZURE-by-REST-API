@@ -98,3 +98,9 @@ You should replace the following values : <br>
   -    $PublicIp
   -    $nsg_Value
   ```
+
+
+5.  Check Network security group on AZURE Portal
+    Open [AZURE Portal](portal.azure.com)<br>
+    Navigate to <b>home</b> > <b>Network security group</b> > <b>HoneyAgent1-nsg</b> 
+    ![network_interface_azure_portal](images/network_security_group_azure_portal.PNG)
