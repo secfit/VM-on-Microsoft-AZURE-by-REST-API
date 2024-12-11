@@ -49,3 +49,5 @@ After successfully authentication to Microsoft AZURE via Powershell, we should g
      ```powershell
          Invoke-RestMethod -Uri $url -Headers $authHeader -Method PUT -Body $body
      ```
+<br><br>
+#### You can download full Poweshell script [create_ressource_group.ps1](create_ressource_group.ps1) 
