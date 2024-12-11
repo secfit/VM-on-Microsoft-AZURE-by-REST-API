@@ -2,10 +2,6 @@
 Based on the last example, we have to keep the same authentication value and using the last Token creation, `Get token` and `authHeader` should be the same, we are going to change on `parameters` and `body` sections:
 1.  Set Mandatory parameters
    ```powershell
-    $virtualNetworkName = "vneticshoneyagent1_z1"
-    $NetworkInterfaceName = "int1HONEYAGENT1_Z1"
-    $subscriptionId="12e6b5b1-87o4-4f4e-ac46-d12f87a32099"
-    $resourcegroupname="Honeypot_ICS"
     $baseUrl = "https://management.azure.com/subscriptions/$SubscriptionId" + "/resourceGroups/$resourceGroupName"
     $apiVersion = "?api-version=2024-05-01"
     $url = $baseUrl + "/providers/Microsoft.Network/virtualNetworks/" + $virtualNetworkName + $apiVersion
