@@ -4,17 +4,19 @@ Based on the last example, we have to keep the same authentication value and usi
    ```powershell
     $virtualNetworkName = "vneticshoneyagent1_z1"
     $NetworkInterfaceName = "int1HONEYAGENT1_Z1"
-    $subscriptionId="34e6b5b1-46e4-4f4e-bd46-d07e88a37274"
+    $subscriptionId="12e6b5b1-87o4-4f4e-ac46-d12f87a32099"
     $resourcegroupname="Honeypot_ICS"
     $baseUrl = "https://management.azure.com/subscriptions/$SubscriptionId" + "/resourceGroups/$resourceGroupName"
     $apiVersion = "?api-version=2024-05-01"
     $url = $baseUrl + "/providers/Microsoft.Network/virtualNetworks/" + $virtualNetworkName + $apiVersion
    ```
+Destination URL should be  : <br>
+`https://management.azure.com/subscriptions/12e6b5b1-87o4-4f4e-ac46-d12f87a32099/resourceGroups/Honeypot_ICS/providers/Microsoft.Network/virtualNetworks/vneticshoneyagent1_z1?api-version=2024-05-01`<br><br>
 You should replace the following values : <br>
 ```
   $virtualNetworkName = vneticshoneyagent1_z1
   $NetworkInterfaceName = int1HONEYAGENT1_Z1
-  $subscriptionId = 34e6b5b1-46e4-4f4e-bd46-d07e88a37274
+  $subscriptionId = 12e6b5b1-87o4-4f4e-ac46-d12f87a32099
   $resourcegroupname = Honeypot_ICS
   api-version = 2024-05-01
 ```
@@ -36,13 +38,13 @@ You should replace the following values : <br>
             "subnets": [
                 {
                     "name": "default",
-                    "id": "/subscriptions/34e6b5b1-46e4-4f4e-bd46-d07e88a37274/resourceGroups/Honeypot_ICS/providers/Microsoft.Network/virtualNetworks/vneticshoneyagent1_z1/subnets/default",
+                    "id": "/subscriptions/12e6b5b1-87o4-4f4e-ac46-d12f87a32099/resourceGroups/Honeypot_ICS/providers/Microsoft.Network/virtualNetworks/vneticshoneyagent1_z1/subnets/default",
                     "properties": {
                         "provisioningState": "Succeeded",
                         "addressPrefix": "10.0.0.0/24",
                         "ipConfigurations": [
                             {
-                                "id": "/subscriptions/34e6b5b1-46e4-4f4e-bd46-d07e88a37274/resourceGroups/Honeypot_ICS/providers/Microsoft.Network/networkInterfaces/int1HONEYAGENT1_Z1/ipConfigurations/IPCONFIG1"
+                                "id": "/subscriptions/12e6b5b1-87o4-4f4e-ac46-d12f87a32099/resourceGroups/Honeypot_ICS/providers/Microsoft.Network/networkInterfaces/int1HONEYAGENT1_Z1/ipConfigurations/IPCONFIG1"
                             }
                         ],
                         "delegations": [],
