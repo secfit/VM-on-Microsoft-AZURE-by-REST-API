@@ -68,3 +68,8 @@ You should replace the following values : <br>
 -    $NetworkInterfaceName
 -    $resourcegroupname
 ```
+
+4.  Check IP Address on AZURE Portal
+    Open [AZURE Portal](portal.azure.com)<br>
+    Navigate to <b>home</b> > <b>Virtual network</b> > <b>vneticshoneyagent1_z1</b> 
+    ![Ip_address_capture_portal](images/virtual_network_capture_portal.jpeg)
