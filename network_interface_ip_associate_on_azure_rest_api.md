@@ -25,7 +25,6 @@ You should replace the following values : <br>
   ```
 
 3.  The body section will be as following :<br>
-      For more information about AZURE API options for IP Address creation : [Azure Help](https://learn.microsoft.com/en-us/rest/api/virtualnetwork/public-ip-addresses/create-or-update?view=rest-virtualnetwork-2024-05-01&tabs=HTTP)
       ```powershell
         $body='{
         	"location": "centralus",
