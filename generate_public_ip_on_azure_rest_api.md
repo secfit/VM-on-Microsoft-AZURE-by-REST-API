@@ -79,13 +79,13 @@ You should replace the following values : <br>
      ```
      
      The result should be as following:
-    ![Connect-AzAccount-pop-up](images/get_ip.JPEG)
+    ![Connect-AzAccount-pop-up](images/get_ip.JPG)
 
    
    To filter for specific result of ipAddress value, we store ipAddress in `$_IP_res` variable by filtering for `.properties.ipAddress` value: 
   ```powershell
       $_IP_res=(Invoke-RestMethod -Uri $url -Headers $authHeader -Method GET).properties.ipAddress
   ```
-![Connect-AzAccount-pop-up](images/get_ip_uniq.JPEG)
+![Connect-AzAccount-pop-up](images/get_ip_uniq.JPG)
 
 
