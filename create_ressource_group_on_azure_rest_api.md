@@ -62,4 +62,4 @@ You should replace the following values : <br>
 11.  Check Ressource Group on AZURE Portal
     Open [AZURE Portal](portal.azure.com)<br>
     Navigate to <b>home</b> > <b>Ressource group</b> > <b>Honeypot_ICS</b> 
-    ![Ip_address_capture_portal](images/ressource_group_capture_portal.jpeg)
+    ![Ip_address_capture_portal](images/ressource_group_capture_portal.png)
