@@ -20,7 +20,8 @@ After successfully authentication to Microsoft AZURE via Powershell, we should g
   $token = $profileClient.AcquireAccessToken($context.Subscription.TenantId)
    ```
 9.  Set subscriptionID and resource group name, and identify Request URL<br>
-    Note : for Azure Resource Manager provider APIs we use https://management.azure.com/
+    Note : for Azure Resource Manager provider APIs we use https://management.azure.com/<br>
+    The final USRL should be like this :<br> `https://management.azure.com/subscriptions/12e6b5b1-87o4-4f4e-ac46-d12f87a32099/resourceGroups/Honeypot_ICS?api-version=2024-08-01`
    ```powershell
     $subscriptionId="12e6b5b1-87o4-4f4e-ac46-d12f87a32099"
     $resourcegroupname="Honeypot_ICS"
