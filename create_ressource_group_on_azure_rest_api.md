@@ -45,3 +45,7 @@ After successfully authentication to Microsoft AZURE via Powershell, we should g
             }
          }'
      ```
+11.  Once the URL has been defined, we can use the `Invoke-RestMethod` in PowerShell to make the call. We will pass in the method type, `PUT` in this call, the URL, and the authentication header.
+     ```powershell
+         Invoke-RestMethod -Uri $url -Headers $authHeader -Method PUT -Body $body
+     ```
