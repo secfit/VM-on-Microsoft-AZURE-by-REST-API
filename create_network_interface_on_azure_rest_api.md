@@ -65,7 +65,15 @@ Destination URL should be  : <br>
      ```powershell
       Invoke-RestMethod -Uri $url -Headers $authHeader -Method PUT -Body $body
      ```
-
+  
+  #### You can download full Poweshell script [create_network_interface.ps1](create_network_interface.ps1) 
+  You should replace the following values : <br>
+  ```
+  -    $subscriptionId
+  -    $NetworkInterfaceName
+  -    $resourcegroupname
+  -    $PublicIp
+  ```
 
 4.  Check Network Interface on AZURE Portal
     Open [AZURE Portal](portal.azure.com)<br>
