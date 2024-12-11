@@ -72,7 +72,7 @@ Destination URL should be  : <br>
   -    $subscriptionId
   -    $NetworkInterfaceName
   -    $resourcegroupname
-  -    $PublicIp
+  -    $virtualNetworkName
   ```
 
 4.  Check Network Interface on AZURE Portal
