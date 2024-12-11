@@ -77,13 +77,15 @@ You should replace the following values : <br>
     
     Invoke-RestMethod -Uri $url -Headers $authHeader -Method GET
      ```
+     
      The result should be as following:
     ![Connect-AzAccount-pop-up](images/get_ip.JPEG)
 
    
-   To filter for specific result "ipAddress" values, use this command : 
-     ```powershell
+   To filter for specific result of ipAddress value, we store ipAddress in `$_IP_res` variable by filtering for `.properties.ipAddress` value: 
+  ```powershell
       $_IP_res=(Invoke-RestMethod -Uri $url -Headers $authHeader -Method GET).properties.ipAddress
-     ```
+  ```
+![Connect-AzAccount-pop-up](images/get_ip_uniq.JPEG)
 
 
