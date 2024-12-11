@@ -48,14 +48,14 @@ Destination URL should be  : <br>
       Invoke-RestMethod -Uri $url -Headers $authHeader -Method PUT -Body $body
      ```
 
-#### You can download full Poweshell script [create_ip_address.ps1](create_ip_address.ps1) 
-You should replace the following values : <br>
-```
--    $subscriptionId
--    $NetworkInterfaceName
--    $resourcegroupname
--    $PublicIp
-```
+  #### You can download full Poweshell script [create_ip_address.ps1](create_ip_address.ps1) 
+  You should replace the following values : <br>
+  ```
+  -    $subscriptionId
+  -    $NetworkInterfaceName
+  -    $resourcegroupname
+  -    $PublicIp
+  ```
 
 4.  Retreive Public IP value :<br>
     note : we are using `Invoke-RestMethod` with `GET` method. 
@@ -79,13 +79,16 @@ You should replace the following values : <br>
      ```
      
      The result should be as following:
-    ![Connect-AzAccount-pop-up](images/ip_address_details.PNG)
+    ![ip_address_details](images/ip_address_details.PNG)
 
    
        To filter for specific result of ipAddress value, we store ipAddress in `$_IP_res` variable by filtering for `.properties.ipAddress` value: 
       ```powershell
           $_IP_res=(Invoke-RestMethod -Uri $url -Headers $authHeader -Method GET).properties.ipAddress
       ```
-    ![Connect-AzAccount-pop-up](images/ip_address_uniq.PNG)
-    
+    ![ip_address_uniq](images/ip_address_uniq.PNG)
 
+5.  Check IP Address on AZURE Portal
+    Open [AZURE Portal](portal.azure.com)<br>
+    Navigate to <b>home</b> > <b>Public IP addresses</b> > <b>ip1HONEYAGENT1_Z1</b> 
+    ![Ip_address_capture_portal](images/Ip_address_capture_portal.jpeg)
