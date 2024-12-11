@@ -59,3 +59,16 @@ You should replace the following values : <br>
         },
     }'
    ```
+3.   Call Invoke-RestMethod using PUT request:
+   ```powershell
+      Invoke-RestMethod -Uri $url -Headers $authHeader -Method PUT -Body $body
+   ```
+
+#### You can download full Poweshell script [create_virtual_network.ps1](create_virtual_network.ps1) 
+You should replace the following values : <br>
+```
+-    $subscriptionId
+-    $virtualNetworkName
+-    $NetworkInterfaceName
+-    $resourcegroupname
+```
