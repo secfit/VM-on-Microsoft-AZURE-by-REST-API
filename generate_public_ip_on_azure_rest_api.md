@@ -56,3 +56,34 @@ You should replace the following values : <br>
 -    $resourcegroupname
 -    $PublicIp
 ```
+
+4.  Retreive Public IP value :<br>
+    note : we are using `Invoke-RestMethod` with `GET` method. 
+     ```powershell
+      $NetworkInterfaceName = "int1HONEYAGENT1_Z1"
+      $subscriptionId="12e6b5b1-87o4-4f4e-ac46-d12f87a32099"
+      $resourcegroupname="Honeypot_ICS"
+      $PublicIp="ip1HONEYAGENT1_Z1"
+      $baseUrl = "https://management.azure.com/subscriptions/$SubscriptionId" + "/resourceGroups/$resourceGroupName"
+      $apiVersion = "?api-version=2024-05-01"
+      $url = $baseUrl + "/providers/Microsoft.Network/publicIPAddresses/" + $PublicIp + $apiVersion
+      $nsg_Value = (Invoke-RestMethod -Uri $url -Headers $authHeader -Method GET).value.name
+
+     $authHeader = @{
+      'Content-Type' = 'application/json' 
+      'Authorization' = 'Bearer ' + $token.AccessToken 
+      'host'="management.azure.com"
+    }
+    
+    Invoke-RestMethod -Uri $url -Headers $authHeader -Method GET
+     ```
+     The result should be as following:
+    ![Connect-AzAccount-pop-up](images/get_ip.JPEG)
+
+   
+   To filter for specific result "ipAddress" values, use this command : 
+     ```powershell
+      $_IP_res=(Invoke-RestMethod -Uri $url -Headers $authHeader -Method GET).properties.ipAddress
+     ```
+
+
