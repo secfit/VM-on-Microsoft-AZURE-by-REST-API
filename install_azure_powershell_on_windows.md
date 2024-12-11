@@ -1,3 +1,4 @@
+# Install Azure PowerShell on Windows 
 Azure PowerShell is a command-line utility that enables users to manage Azure resources directly from the command line. This robust tool is designed for automating tasks, provisioning resources, managing user accounts and policies within Azure, and troubleshooting various issues.
 
 #### Prerequisites
