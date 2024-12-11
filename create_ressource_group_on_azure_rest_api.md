@@ -10,7 +10,7 @@ After successfully authentication to Microsoft AZURE via Powershell, we should g
 4.  Store Subscription ID into the variable such as: `$subscriptionId="12e6b5b1-87o4-4f4e-ac46-d12f87a32099"`
 5.  Generate Resource Group Name as example: `$resourcegroupname="Honeypot_ICS"`
 6.  Use the last API Version: `2024-08-01` for URL call.<br>
-7.  On this example, the location will be "US East" and tag is "Honeypot_1"<br>
+7.  On this example, the location will be "US East" `eastus` and tag is `Honeypot_1`<br>
 8.  Use the followin to generate token
    ```powershell
   # Get token
