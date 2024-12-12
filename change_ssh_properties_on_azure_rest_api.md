@@ -39,3 +39,7 @@ Destination URL should be  : <br>
   -    $VMname
   -    $resourcegroupname
   ```
+
+3.  Check SSH configuration by connecting to VM using shell commands 
+    ![network_interface_azure_portal](images/ssh_cmd_shell.PNG)
+
