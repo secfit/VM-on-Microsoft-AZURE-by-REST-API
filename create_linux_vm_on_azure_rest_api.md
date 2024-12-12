@@ -102,7 +102,7 @@ Destination URL should be  : <br>
         Invoke-RestMethod -Uri $url -Headers $authHeader -Method PUT -Body $body
        ```
 
-     #### You can download full Poweshell script [create_network_interface.ps1](create_network_interface.ps1) 
+     #### You can download full Poweshell script [create_virtual_machine.ps1](create_virtual_machine.ps1) 
       You should replace the following values : <br>
       ```
         -  $VMname
