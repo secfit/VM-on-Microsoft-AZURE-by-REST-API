@@ -5,7 +5,7 @@ Creating a Virtual Machine (VM) on Microsoft Azure using REST API leveraging the
 The Azure REST API provides developers and IT professionals with programmatic access to Azure resources, allowing them to create, configure, manage, and scale virtual machines without relying on the Azure Portal interface.
 <br>
 <br>
-  ![virtual_network_diagram](images/virtual_network_diagram.PNG)
+  ![Virtual Machine AZURE](images/Virtual-Machine-AZURE.png)
   <br>
 ### Note : To deploy a virtual machine in Azure using the REST API, you must follow these steps in the specified order.
 ## Steps : 
@@ -21,7 +21,7 @@ The Azure REST API provides developers and IT professionals with programmatic ac
 10. Creat Linux virtual Machine [create_linux_vm_on_azure_rest_api.md](create_linux_vm_on_azure_rest_api.md)
 11. Change ssh properties [change_ssh_properties_on_azure_rest_api.md](change_ssh_properties_on_azure_rest_api.md)
 
-
+  ![virtual_network_diagram](images/virtual_network_diagram.PNG)
 ## For more details you can get your custom purpose to interact with AZURE platform : 
 | Step | Description | Details | PowerShell script |
 | --- | --- | --- | --- |
